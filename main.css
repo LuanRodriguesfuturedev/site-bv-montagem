@@ -1,0 +1,17 @@
+header {
+  background-color: wheat;
+}
+
+header img {
+  width: 18vh;
+}
+
+header h1 {
+  background-color: black;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.nav-link {
+  text-align: center;
+}
