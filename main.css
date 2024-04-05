@@ -1,17 +1,24 @@
+body{
+  background-color: gainsboro;
+}
+
 header {
-  background-color: wheat;
+  background-image:url(./images/plano-de-fundo-header.png);
+  opacity: 0.8;
 }
 
 header img {
-  width: 18vh;
-}
-
-header h1 {
-  background-color: black;
-  padding: 8px;
-  border-radius: 12px;
+  width: 12vh;
+  background-color: whitesmoke;
+  border-radius: 14px;
 }
 
 .nav-link {
   text-align: center;
+  color: white;
+}
+
+.carousel-item img {
+  max-height: 480px; 
+  width: 100%;
 }
