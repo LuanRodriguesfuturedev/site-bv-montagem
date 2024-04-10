@@ -1,16 +1,21 @@
+
 body{
-  background-color: gainsboro;
+  background-color: rgb(192, 190, 190);
 }
 
 header {
-  background-image:url(./images/plano-de-fundo-header.png);
-  opacity: 0.8;
+  background-color: rgb(153, 142, 128);
+}
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 header img {
-  width: 12vh;
-  background-color: whitesmoke;
-  border-radius: 14px;
+  width: 8vh;
 }
 
 .nav-link {
@@ -21,4 +26,49 @@ header img {
 .carousel-item img {
   max-height: 480px; 
   width: 100%;
+}
+
+section{
+  padding-top: 70px;
+}
+
+h1{
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#style-indicators button{
+  background-color: black;
+}
+
+.custom-video{
+  height: 40vh;
+}
+
+#icon-custom img{
+  width: 42px;
+}
+
+.custom-img{
+  height: 440px;
+}
+
+.contact-custom img{
+  width: 32px
+}
+
+.contact-custom #img-tel{
+  width: 32px;
+  margin-left: px;
+}
+
+.contact-custom #img-insta{
+  width: 28px;
+}
+
+footer{
+  background-color: rgb(153, 142, 128);
+}
+
+footer img{
+  width: 32px;
 }

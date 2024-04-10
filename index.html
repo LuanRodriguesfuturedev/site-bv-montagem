@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bv Montagem</title>
-    <link rel="icon" type="image/icon-logo" href="./images/logo-navegador.jpeg">
+    <title>Bv Montagens de Móveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/icon-logo" href="./images/logo-header-navigation.png">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
+    <header id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
-                <img src="./images/logo-sem-fundo.png" alt="logo-header">
+                <img src="./images/logo-header-navigation.png" alt="logo-header">
                 <button data-bs-toggle="collapse" data-bs-target="#menu" type="button" class="navbar-toggler bg-white">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end mt-3" id="menu">
                     <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre-nós">Sobre nós</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#quem-somos">Quem somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#montagens">Montagens</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
+                            <a class="nav-link" href="#clientes">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#duvidas">Dúvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos">Contatos</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,9 +43,9 @@
         </div>
     </header>
     <div>
-        <div id="carousel-function" class="carousel slide mt-1" data-bs-ride="carousel">
+        <div id="carousel-function" class="carousel slide mt-1 mb-1" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div data-bs-interval="2000" class="carousel-item active">
+                <div data-bs-interval="3000" class="carousel-item active">
                     <img src="./images/Banner-1.png" alt="Banner 1 - Seja Bem Vindo">
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
@@ -56,6 +62,261 @@
             </div>
         </div>
     </div>
+    <div class="sections-custom">
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" class="container">
+            <section id="quem-somos">
+                <h1>Quem somos</h1>
+                <hr>
+                <p>
+                    BV Montagens de Móveis:<br>
+                    Somos uma empresa com a missão de transformar casas em lares, proporcionando serviços 
+                    de montagem de móveis com excelência, qualidade e respeito ao cliente. Com anos de experiência no setor, 
+                    construímos nossa reputação baseada em valores sólidos de integridade, profissionalismo e 
+                    comprometimento com a satisfação do cliente. <br><br>
+                    Compromisso com a Qualidade:<br>
+                    Nosso compromisso com a qualidade reflete-se em cada etapa do processo de montagem. 
+                    Nossa equipe altamente qualificada e experiente trabalha com precisão e atenção aos detalhes, 
+                    garantindo que cada móvel seja montado de forma segura, durável e funcional. Utilizamos 
+                    ferramentas e técnicas de ponta para garantir resultados impecáveis em cada projeto. <br><br>
+                    Respeito ao Cliente:<br>
+                    Na BV Montagem de Móveis, valorizamos profundamente cada cliente. Entendemos que cada projeto é 
+                    único e estamos comprometidos em ouvir atentamente suas necessidades e preferências. 
+                    Nossa equipe trabalha de forma colaborativa, oferecendo orientação especializada e 
+                    soluções personalizadas para garantir que suas expectativas sejam não apenas atendidas, mas superadas.
+                </p>
+            </section>
+            <section id="montagens">
+                <h1>Montagens</h1>
+                <hr>
+                <div id="carousel2-function" class="carousel slide mt-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img src="./images/banner-montagem1.png">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./images/banner-montagem2.png">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./images/banner-montagem3.png">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./images/banner-montagem4.png">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./images/banner-montagem5.png">
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel2-function" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel2-function" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators" id="style-indicators">
+                        <button class="active" type="button" data-bs-target="#carousel2-function" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel2-function" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel2-function" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel2-function" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carousel2-function" data-bs-slide-to="4"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <article class="card bg-dark">
+                            <video controls class="card-img-top custom-video">
+                                <source src="./videos/video-1.mp4">
+                            </video>
+                            <div class="card-body text-center text-bg-dark" id="icon-custom">
+                                <h5>Conheça mais sobre nosso trabalho</h5>
+                                <a href="https://wa.me/5534998805214" class="btn btn-success mt-3" target="_blank">
+                                    Entrar em contato
+                                    <img src="./images/icon-wpp.png" alt="icone whatsapp">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <article class="card bg-dark">
+                            <video controls class="card-img-top custom-video">
+                                <source src="./videos/video-2.mp4">
+                            </video>
+                            <div class="card-body text-center text-bg-dark" id="icon-custom">
+                                <h5>Atendemos residências rurais</h5>
+                                <a href="https://wa.me/5534998805214" class="btn btn-success mt-3" target="_blank">
+                                    Entrar em contato
+                                    <img src="./images/icon-wpp.png" alt="icone whatsapp">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                        <article class="card bg-dark">
+                            <video controls class="card-img-top custom-video">
+                                <source src="./videos/video-3.mp4">
+                            </video>
+                            <div class="card-body text-center text-bg-dark" id="icon-custom">
+                                <h5>Compromisso com a qualidade</h5>
+                                <a href="https://wa.me/5534998805214" class="btn btn-success mt-3" target="_blank">
+                                    Entrar em contato
+                                    <img src="./images/icon-wpp.png" alt="icone whatsapp">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="clientes">
+                <h1>Clientes</h1>
+                <hr>
+                <p>
+                    Torne-se um Cliente da BV Montagens Hoje! Junte-se a uma lista crescente de clientes satisfeitos que confiam na BV Montagens 
+                    para fornecer soluções de montagens e desmontagens excepcionais. Não importa o tamanho ou a complexidade do seu projeto, 
+                    estamos prontos para ajudar. Entre em contato conosco hoje mesmo e descubra como podemos tornar sua visão uma realidade! <br>
+                    Na BV Montagens, estamos comprometidos em transformar visões em realidade. Somos mais do que uma empresa de montagem e desmontagem, somos 
+                    seus parceiros na busca pela excelência. Se você está procurando por serviços de montagens e desmontagens de alta qualidade, 
+                    confiáveis e eficientes, você veio ao lugar certo.
+                </p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
+                        <article class="card">
+                            <img class="custom-img" src="./images/cliente-1.jpeg">
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
+                        <article class="card">
+                            <img class="custom-img" src="./images/cliente-2.jpeg">
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
+                        <article class="card">
+                            <img class="custom-img" src="./images/cliente-3.jpeg">
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="duvidas">
+                <h1>Dúvidas frequentes</h1>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item mt-5">
+                        <div class="accordion-header">
+                            <button id="custom-duvidas" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta-one">
+                                - Como funciona a garantia da BV MONTAGENS?
+                            </button>
+                        </div>
+                        <div id="resposta-one" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Na BV Montagens, asseguramos uma montagem de qualidade. Em caso de qualquer defeito detectado em qualquer 
+                                parte do seu móvel, oferecemos suporte especializado para resolver qualquer problema relacionado à 
+                                montagem, garantindo sua completa satisfação e tranquilidade.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-1">
+                        <div class="accordion-header">
+                            <button id="custom-duvidas" class="accordion-button bg" data-bs-toggle="collapse" data-bs-target="#resposta-two">
+                                - Zona rural e cidades vizinhas tem taxa de deslocamento?
+                            </button>
+                        </div>
+                        <div id="resposta-two" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Na BV Montagem, oferecemos serviços de montagem e desmontagem em zonas rurais e cidades vizinhas. Cobramos uma taxa de deslocamento 
+                                com base na quilometragem entre nossa empresa e o seu endereço, garantindo um atendimento abrangente e justo. 
+                                Estamos disponíveis para esclarecer qualquer dúvida sobre nossas políticas de cobrança.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-1">
+                        <div class="accordion-header">
+                            <button id="custom-duvidas" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta-three">
+                                - Como funciona o atendimento em finais de semana e feriados?
+                            </button>
+                        </div>
+                        <div id="resposta-three" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Estamos disponíveis para atendimento aos finais de semana e feriados mediante agendamento prévio. Contamos com flexibilidade 
+                                para atender às suas necessidades com eficiência. Para agendar, por favor, entre em contato antecipadamente.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mt-1">
+                        <div class="accordion-header">
+                            <button id="custom-duvidas" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta-four">
+                                - Como faço para entrar em contato?
+                            </button>
+                        </div>
+                        <div id="resposta-four" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Gostaríamos de informar que abaixo disponibilizamos a seção de contatos, onde você encontrará números para ligação, WhatsApp e 
+                                links para nossas redes sociais. Estamos ansiosos para receber seu contato e proporcionar o melhor atendimento possível.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contatos" class="contact-custom mt-5">
+                <h1>Contatos</h1>
+                <hr>
+                <div>
+                    <div>
+                        <h4>WhatsApp
+                            <img src="./images/whatsapp.png" alt="logo-whatsapp">
+                        </h4>
+                        <p>
+                            <a href="https://wa.me/5534998805214" class="btn btn-primary" target="_blank">
+                            Iniciar conversa
+                            </a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Instagram
+                            <img id="img-insta" src="./images/instagram-icon.png" alt="logo-instagram">
+                        </h4>
+                        <p>
+                            <a href="https://www.instagram.com/bvmontagensdemoveis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" target="_blank">
+                            Ir para o perfil
+                            </a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>Telefone
+                            <img id="img-tel" src="./images/telefone-icon.png" alt="logo-telefone">
+                        </h4>
+                        <p>
+                            <a class="btn btn-primary">(34) 99880-5214</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="text-light text-center mt-5 py-5">
+        <div class="container">
+            <span>
+                &copy; 2024 BV MONTAGENS - TODOS OS DIREITOS RESERVADOS
+            </span>
+            <p>
+                <hr>
+                CNPJ: 52.883.525/0001-16 <br>
+                RUA: VICENTE DE PAULO - NÚMERO 60 <br>
+                BAIRRO: SOLAR DAS ÁGUAS <br> 
+                CEP: 38140-000 - PRATA/MG <hr>
+            </p>
+            <div>
+                <a href="https://www.instagram.com/bvmontagensdemoveis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="./images/insta-footer.png" alt="logo-instagram">
+                </a>
+                <a href="https://www.tiktok.com/@bvmontagensdemoveis?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <img src="./images/tiktok-footer.png" alt="logo-tiktok">
+                </a>
+                <a href="https://wa.me/5534998805214" target="_blank">
+                    <img src="./images/whatsapp-footer.png" alt="logo-whatsapp">
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
